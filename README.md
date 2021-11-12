@@ -10,11 +10,11 @@ Projeto foi proposto no bootcamp React Web Developer da empresa Impulso pela pla
 -	Carrossel - no curso foi criado com Owl Carousel, para fins de desafio implementei um carrossel com outra ferramenta que descobri através de pesquisa, o GliderJs.
 
 ## Tecnologias Utilizadas
-  - HTML 5
-	- CSS 3
-	- Javascript
-	- Jquery
-	- Gliderjs
+- HTML 5
+- CSS 3
+- Javascript
+- Jquery
+- Gliderjs
 
 ## Instalação e Execução
 - Faça o clone do repositório com o comando git clone;
