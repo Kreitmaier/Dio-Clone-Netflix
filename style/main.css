@@ -1,0 +1,248 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+
+     /* 1rem = 16px (User Agent) = 100 % (User Agent) */
+     font-size: 62.5%; /* 10px */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Arial';
+    color: white;
+    
+}
+
+header{
+    font-size: 1.6rem;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50) 100%), url('../assets/img/capa-house.jpg');
+
+    height: 50rem;
+    background-size: cover;
+}
+
+header .container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container-nav .logo{
+    margin-left: 1rem;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 4rem;
+}
+
+header .container-nav nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 1rem;
+}
+
+header .container-nav nav a:hover{
+    color: #fff;
+}
+
+/* Filme Principal */
+header .container-filme{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 1rem;
+}
+
+header .container-filme .descricao{
+    margin-top: 1rem;
+}
+
+header .container-filme .titulo{
+    margin-top: 20rem;
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.50);
+    border:none;
+    color: white;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 0.8rem;
+}
+
+header .title-recomendado{
+    font-size: 2rem;
+    margin-top: 9rem;
+}
+
+/* ESTILO PAINEL ASSISTIR AGORA*/
+.container-assistir{
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+.container-maisinfor{
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.assistir{
+    display: flex;
+    width: 60%;
+    height: 98%;
+    background-color: var(--preto);
+    margin-top: 0.5rem;
+    position: absolute;
+    z-index: 3;
+    padding:1.5rem;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 3px 3px rgba(0,0,0,0.50);
+}
+
+.assistir h2{
+    font-size: 3.2rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.episodios{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 0.5rem; 
+}
+
+.episodio{
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 1.6rem;
+}
+
+.episodio:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.episodios h3{
+    font-size: 2.8rem;
+}
+
+.prologo{
+    font-size: 1.2rem;
+}
+
+.prologo h3{
+    font-size: 2rem;
+    margin-top: 0.8rem;
+}
+
+.prologo p{
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+/*ESTILO DO CARROUSEL Glider.*/
+
+.glider_container{
+    display: flex;    
+}
+
+.glider_container .botao{
+    margin: 0
+}
+
+.glider__slides{
+    overflow: hidden;
+    display: flex;
+}
+
+.glider__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.glider__slide:hover{
+    transform: scale(1.05);
+}    
+
+.glider__slide:nth-child(n+2){
+    margin-left: 0.8rem;
+}
+
+#frame-filme{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100px;
+}
+
+@media screen and (max-width:420px){
+    header .container-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    header .title-recomendado{
+        font-size: 2rem;
+        margin-top: 7rem;
+    } 
+}
+
+@media screen and (max-width:720px){
+    header .container-nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .container-filme .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 1rem;
+        width: 19rem;
+    }
+    .glider_container .botao{
+        margin: 0;
+        width: 3rem;
+    }
+    header .container-filme .titulo{
+        margin-top: 13rem;
+    }
+    
+}
+
+@media screen and (min-width:1080px) {
+    .descricao{
+        width: 50%;
+    }
+    
+}

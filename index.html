@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Core Style do Glide-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+   
+  <header>  
+
+    <div class="container-nav">
+      <h2 class="logo">NETFLIX</h2>
+      <nav>
+          <a href="#">Inicio</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Documentários</a>
+      </nav>
+    </div>
+  
+    <div class="container-filme">
+        <h1 class="titulo">HOUSE OF CARDS</h1>
+        <p class="descricao">Nada pode impedir o politico sem escrupulos Frank Underwood de conquistar Washington.</p>
+
+        <div class="botoes">
+          <button role="button" id="assitir_agora" class="botao">
+            <i class="fas fa-play"></i>
+            Assistir agora
+          </button>
+
+          <button role="button" id="mais_informacoes" class="botao">
+            <i class="fas fa-info-circle"></i>
+            Mais informações
+          </button>
+
+          
+        </div>
+    </div>
+      <h2 class="title-recomendado">Conteúdo recomendado</h2>
+  </header>
+       
+  <main>
+    <article class="glider_container">
+     
+      <button class="botao prev" aria-label="Anterior"><</button>
+
+      <div class="glider__slides">
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/bac-nord.jpg" alt="Filme Bac Nord"/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/cisne-negro.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/cruela.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/dmsly.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/fundacao.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/good-doctor.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/greys-anatomy.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/kate.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/loki.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/pegue-a-bala.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/riverdale.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/super-hero.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/twd.jpg" alt=""/>
+        </article>
+        <article class="glider__slide">
+          <img class="box-filme" src="assets/img/viuva-negra.jpg" alt=""/>
+        </article>
+      </div>
+                 
+      <button class="botao next" aria-label="Próximo">></button>
+
+    </article>
+  </main>  
+</body>
+
+<!-- GliderJs -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script> 
+<script src="./js/setupcarrosel.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+<!--Script Botão Assistir Agora-->
+<script src="js/btnAssistirAgora.js"></script>
+
+<!--Script Botão Mais Informações-->
+<script src="js/btnMaisInformacoes.js"></script>
+</html>
